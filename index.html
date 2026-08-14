@@ -1,0 +1,384 @@
+<!DOCTYPE html>
+<html lang="en" class="no-js">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, viewport-fit=cover"
+    />
+    <meta
+      name="description"
+      content="Nygra — a botanical ecommerce experience for future-forward wellness."
+    />
+    <title>Nygra — Botanical Ecommerce Experience</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles/main.css" />
+  </head>
+  <body>
+    <div class="page-shell">
+      <header class="hero" id="top">
+        <nav class="nav">
+          <a class="brand" href="#top" aria-label="Nygra home">
+            <span class="brand-mark">
+              <img src="assets/nygra-logo.svg" alt="Nygra concentric logo" />
+            </span>
+            <span class="brand-text">nygra</span>
+          </a>
+          <button
+            class="nav-toggle"
+            type="button"
+            aria-label="Open navigation"
+            aria-expanded="false"
+            data-nav-toggle
+          >
+            <span></span>
+            <span></span>
+          </button>
+          <div class="nav-links" data-nav-links>
+            <a href="#collections">Collections</a>
+            <a href="#experience">Experience</a>
+            <a href="#impact">Impact</a>
+            <a href="#journal">Journal</a>
+            <a href="#contact">Contact</a>
+            <a href="#dealer">Become a dealer</a>
+            <button type="button" class="btn secondary nav-only">
+              Wholesale
+            </button>
+            <button
+              type="button"
+              class="btn accent nav-only"
+              data-scroll-to="#collections"
+            >
+              Shop capsules
+            </button>
+          </div>
+          <div class="nav-actions">
+            <button
+              class="chip ghost"
+              type="button"
+              data-theme-toggle
+              aria-pressed="false"
+            >
+              Aura mode
+            </button>
+            <button
+              class="btn secondary desktop-only"
+              type="button"
+              data-scroll-to="#journal"
+            >
+              Stockists
+            </button>
+            <button
+              class="btn accent desktop-only"
+              type="button"
+              data-scroll-to="#collections"
+            >
+              Shop capsules
+            </button>
+          </div>
+        </nav>
+
+        <div class="hero-grid">
+          <div class="hero-copy reveal-on-scroll">
+            <p class="eyebrow">Botanical commerce / 2025 drop</p>
+            <h1>
+              Bio-active rituals crafted for luminous, grounded living.
+            </h1>
+            <p class="lead">
+              Nygra curates small-batch botanicals, adaptogenic supplements, and
+              clean self-care objects designed to energize mornings, revive
+              afternoons, and soften evenings.
+            </p>
+            <div class="cta-row">
+              <button
+                class="btn accent"
+                type="button"
+                data-scroll-to="#collections"
+              >
+                Explore capsules
+              </button>
+              <button
+                class="btn ghost"
+                type="button"
+                data-scroll-to="#story"
+              >
+                Our story
+              </button>
+            </div>
+            <dl class="hero-stats">
+              <div>
+                <dt>32k</dt>
+                <dd>active ritual members</dd>
+              </div>
+              <div>
+                <dt>78%</dt>
+                <dd>sourced within 120 km</dd>
+              </div>
+              <div>
+                <dt>2.6k</dt>
+                <dd>tons CO₂ balanced</dd>
+              </div>
+            </dl>
+          </div>
+
+          <div class="hero-visual" aria-hidden="true">
+            <div class="orb orb-one"></div>
+            <div class="orb orb-two"></div>
+            <div class="ring ring-one"></div>
+            <div class="ring ring-two"></div>
+            <article class="floating-card card-primary">
+              <p>limited drop</p>
+              <h3>Verdant Bloom</h3>
+              <p>phytoceramide serum</p>
+              <span>$68</span>
+            </article>
+            <article class="floating-card card-secondary">
+              <p>staff pick</p>
+              <h3>Forest tonic</h3>
+              <p>nootropic + adaptogen</p>
+              <span>$42</span>
+            </article>
+            <article class="floating-card card-tertiary">
+              <p>member perk</p>
+              <h3>Free chilled shipping</h3>
+              <p>for orders over $95</p>
+            </article>
+          </div>
+        </div>
+      </header>
+
+      <main>
+        <section class="section collection" id="collections">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Live capsules</p>
+              <h2>Shop by bio-phase</h2>
+            </div>
+            <div class="filter-bar">
+              <div class="chip-group" role="tablist">
+                <button class="chip is-active" data-filter-btn="all">
+                  All rituals
+                </button>
+                <button class="chip" data-filter-btn="tea">Tonics</button>
+                <button class="chip" data-filter-btn="supplement">
+                  Supplements
+                </button>
+                <button class="chip" data-filter-btn="body">
+                  Body care
+                </button>
+              </div>
+              <div class="toggle-field">
+                <label class="switch">
+                  <input type="checkbox" data-toggle-new />
+                  <span><strong>Only</strong> new</span>
+                </label>
+              </div>
+            </div>
+          </div>
+          <div class="product-grid" data-product-grid></div>
+        </section>
+
+        <section class="section experience" id="experience">
+          <div class="section-head">
+            <p class="eyebrow">Signature experience</p>
+            <h2>Immersive, sensory-forward commerce</h2>
+            <p class="lead">
+              Crafted storefront components that feel cinematic, intuitive, and
+              aware of the environment you shop from.
+            </p>
+          </div>
+          <div class="experience-grid">
+            <article class="experience-card reveal-on-scroll">
+              <h3>Temperature aware checkout</h3>
+              <p>
+                Our cold-chain packaging toggles automatically based on your
+                regional weather, ensuring botanicals travel perfectly.
+              </p>
+              <ul>
+                <li>Predictive fulfillment windows</li>
+                <li>Smart packaging logic</li>
+                <li>Fridge-ready alerts</li>
+              </ul>
+            </article>
+            <article class="experience-card reveal-on-scroll">
+              <h3>Guided pairing studio</h3>
+              <p>
+                Mix functional teas, mineral mists, and restorative body oils
+                with our AI-backed pairing flows.
+              </p>
+              <ul>
+                <li>Adaptive sensory quiz</li>
+                <li>Flavor + mood mapping</li>
+                <li>One-click bundling</li>
+              </ul>
+            </article>
+            <article class="experience-card reveal-on-scroll">
+              <h3>Member field reports</h3>
+              <p>
+                Real-time telemetry from our grow partners appears as immersive
+                video notes that hover beside each SKU.
+              </p>
+              <ul>
+                <li>Farm-to-flask traceability</li>
+                <li>Geo-tagged harvest logs</li>
+                <li>Impact receipts</li>
+              </ul>
+            </article>
+          </div>
+        </section>
+
+        <section class="section impact" id="impact">
+          <div class="impact-panel">
+            <p class="eyebrow">Impact circuit</p>
+            <h2>Radical transparency built in</h2>
+            <p>
+              Each Nygra purchase unlocks live regenerative data. We publish the
+              soil health, biodiversity, and artisan wages tied to every capsule
+              batch.
+            </p>
+            <dl class="impact-stats">
+              <div>
+                <dt>118</dt>
+                <dd>micro-farms on rotation</dd>
+              </div>
+              <div>
+                <dt>92%</dt>
+                <dd>plastic eliminated</dd>
+              </div>
+              <div>
+                <dt>4.1M</dt>
+                <dd>liters of water restored</dd>
+              </div>
+            </dl>
+          </div>
+          <div class="impact-visual" aria-hidden="true">
+            <div class="impact-map">
+              <span>Andes</span>
+              <span>Yunnan</span>
+              <span>Oaxaca</span>
+              <span>Accra</span>
+            </div>
+            <div class="impact-card">
+              <p>Traceable batch</p>
+              <h3>Lot 11 · Cloudforest Gyokuro</h3>
+              <ul>
+                <li>Harvest altitude · 2,100m</li>
+                <li>Soil moisture · +12%</li>
+                <li>Carbon removal · 36kg / order</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="section story" id="story">
+          <div class="section-head">
+            <p class="eyebrow">Origin notes</p>
+            <h2>The Nygra field journal</h2>
+          </div>
+          <ol class="story-timeline">
+            <li>
+              <span>2019</span>
+              <p>Micro-batch apothecary launches in Lagos night markets.</p>
+            </li>
+            <li>
+              <span>2021</span>
+              <p>
+                Sensor-enabled fermentation labs allow ambient terroir capture
+                for each SKU.
+              </p>
+            </li>
+            <li>
+              <span>2023</span>
+              <p>Member ritual pods open in Stockholm, Accra, and São Paulo.</p>
+            </li>
+            <li>
+              <span>2025</span>
+              <p>
+                Nygra introduces adaptive ecommerce with carbon-aware routing
+                and aura modes.
+              </p>
+            </li>
+          </ol>
+        </section>
+
+        <section class="section testimonials" id="community">
+          <div class="section-head">
+            <p class="eyebrow">Community resonance</p>
+            <h2>What ritualists feel</h2>
+          </div>
+          <div class="testimonial-shell">
+            <div class="testimonial-track" data-testimonial-track></div>
+            <div class="testimonial-dots" data-testimonial-dots></div>
+          </div>
+        </section>
+
+        <section class="section journal" id="journal">
+          <div class="section-head">
+            <p class="eyebrow">Journal dispatch</p>
+            <h2>Sensory intel + sourcing notes</h2>
+          </div>
+          <div class="journal-grid" data-journal-grid></div>
+        </section>
+
+        <section class="section newsletter" id="contact">
+          <div class="newsletter-card reveal-on-scroll">
+            <p class="eyebrow">Stay in the field</p>
+            <h2>Receive the bi-weekly grow log</h2>
+            <p>
+              Early access to capsules, regenerative impact receipts, and sonic
+              moodscapes curated by our growers.
+            </p>
+            <form class="newsletter-form" data-newsletter>
+              <label>
+                <span>Email</span>
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="you@ritualspace.com"
+                  required
+                />
+              </label>
+              <label>
+                <span>Region</span>
+                <input
+                  type="text"
+                  name="region"
+                  placeholder="City / climate"
+                />
+              </label>
+              <button class="btn accent" type="submit">Join the log</button>
+              <p class="form-feedback" role="status" aria-live="polite"></p>
+            </form>
+          </div>
+        </section>
+      </main>
+
+      <footer class="footer">
+        <div class="brand">
+          <span class="brand-mark small">
+            <img src="assets/nygra-logo.svg" alt="Nygra concentric logo" />
+          </span>
+          <span class="brand-text">nygra</span>
+        </div>
+        <p>
+          Regenerative commerce crafted in Lagos · Shipping in climate-aware
+          packaging globally.
+        </p>
+        <div class="footer-links">
+          <a href="#impact">Impact</a>
+          <a href="#experience">Experience</a>
+          <a href="#journal">Journal</a>
+          <a href="#contact">Support</a>
+        </div>
+        <p class="footnote">© <span id="year"></span> Nygra Collective.</p>
+      </footer>
+    </div>
+    <script src="scripts/main.js" defer></script>
+  </body>
+</html>
+
